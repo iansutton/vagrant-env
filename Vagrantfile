@@ -137,4 +137,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 # Flask Port
   config.vm.network :forwarded_port, host: 5000, guest: 5000
+
+# Jenkins Port
+  config.vm.network :forwarded_port, host: 8080, guest: 8080
+
 end
